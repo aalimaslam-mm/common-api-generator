@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const ApiModel = require("./Models/APIs");
 const db = require("./Config/db");
-const port = 3000;
+const port = 4000;
 const cors = require("cors");
 
 app.use(cors());
