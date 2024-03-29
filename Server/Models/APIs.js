@@ -16,7 +16,6 @@ const APISchema = new Schema({
     },
     method: {
         type: String,
-        required: true
     },
     code: {
         type: String,
@@ -36,7 +35,10 @@ const APISchema = new Schema({
         email: String
     },
     language: {
-        lang: String,
+        lang: {
+            type: String,
+            required: true
+        },
         database: String
     }
 });
