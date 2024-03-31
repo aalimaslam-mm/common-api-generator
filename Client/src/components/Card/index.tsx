@@ -2,9 +2,20 @@ import React from 'react'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, } from "@/components/ui/card"
 import Chip from "@/components/Chip"
 import { Button } from '../ui/button'
-function index() {
+
+
+
+type itemType = {
+  name: string,
+  type: string,
+  description: string,
+  tags: string[],
+  code: string
+}
+
+function index({ item }: { item: itemType }) {
   return (
-    <Card className='w-full sm:w-[300px] m-5'>
+    <Card className='w-[300px] m-5'>
       <CardHeader className='flex justify-between items-center flex-row'>
         <CardTitle>Login</CardTitle>
         <Chip type='dark' text='frontend' />
